@@ -18,7 +18,7 @@ fi
 
 echo "> Installing moonlight daemon"
 
-mkdir /lib/moonlightdaemon/
+mkdir /lib/moonlightdaemon/ > /dev/null
 
 echo "- Downloading daemon binary"
 
