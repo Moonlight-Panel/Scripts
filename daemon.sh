@@ -4,6 +4,8 @@ echo "Moonlight Scripts"
 echo "Created by Marcel Baumgartner"
 echo "(c) 2023 moonlightpanel.xyz"
 
+echo ""
+
 echo "> Checking for a existing daemon instance"
 
 if test -f "/etc/systemd/system/moonlightdaemon.service"; then
@@ -42,6 +44,8 @@ systemctl daemon-reload
 
 echo "- Enabling moonlight daemon"
 
-systemctl enable --now moonlightdaemon
+systemctl enable --now moonlightdaemon > /dev/null
+
+echo ""
 
 echo "Done. The moonlight daemon has been installed on this maschine"
