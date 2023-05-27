@@ -25,6 +25,8 @@ echo "- Downloading daemon binary"
 wget -q -O /lib/moonlightdaemon/MoonlightDaemon https://install.moonlightpanel.xyz/daemonFiles/MoonlightDaemon
 
 if test -f "/lib/moonlightdaemon/appsettings.json"; then
+    echo "Found existing config file. Skipping download of the default config"
+else
     echo "No config file found"
     echo "- Downloading default config"
     wget -q -O /lib/moonlightdaemon/appsettings.json https://install.moonlightpanel.xyz/daemonFiles/appsettings.json
