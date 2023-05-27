@@ -12,7 +12,7 @@ if test -f "/etc/systemd/system/moonlightdaemon.service"; then
     echo "Found existing daemon instance"
     echo "Deleting existing daemon instance"
     systemctl stop moonlightdaemon
-    rm -r /lib/moonlightdaemon
+    rm /lib/moonlightdaemon/MoonlightDaemon
     rm /etc/systemd/system/moonlightdaemon.service
 fi
 
