@@ -22,7 +22,7 @@ mkdir /lib/moonlightdaemon/ > /dev/null
 
 echo "- Downloading daemon binary"
 
-wget -q -O /lib/moonlightdaemon/MoonlightDaemon https://install.moonlightpanel.xyz/daemonFiles/MoonlightDaemon
+wget -q -O /lib/moonlightdaemon/MoonlightDaemon https://github.com/Moonlight-Panel/MoonlightDaemon/releases/download/v1b16/MoonlightDaemon_$(uname -m)
 
 if test -f "/lib/moonlightdaemon/appsettings.json"; then
     echo "Found existing config file. Skipping download of the default config"
