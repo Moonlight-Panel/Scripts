@@ -1,0 +1,10 @@
+{
+    "AppUrl": "APP_URL",
+    "Database": {
+        "Host": "DB_HOST",
+        "Port": DB_PORT,
+        "Username": "DB_USERNAME",
+        "Password": "DB_PASSWORD",
+        "Database": "DB_DATABASE"
+    }
+}

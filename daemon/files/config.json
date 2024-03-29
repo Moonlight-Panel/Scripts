@@ -1,0 +1,17 @@
+{
+    "Docker": {
+        "DnsServers": [
+            "1.1.1.1",
+            "8.8.8.8"
+        ]
+    },
+    "Remote": {
+        "Url": "APP_URL",
+        "Token": "TOKEN"
+    },
+    "Http": {
+        "UseSsl": SSL,
+        "HttpPort": HTTP_PORT,
+        "Fqdn": "FQDN"
+    }
+}
