@@ -64,7 +64,11 @@ daemonStatus () {
 
 installUpdate() {
     echo "Updating installer"
-    rm /tmp/Installer
+
+    if test -f /tmp/Installer; then
+        rm /tmp/Installer
+    fi
+
     arch=$(uname -m | grep -q 'x86_64' && echo 'x64' || echo 'arm64')
     curl -o /tmp/Installer https://get-moonlight.app/Installer_$arch
 }
